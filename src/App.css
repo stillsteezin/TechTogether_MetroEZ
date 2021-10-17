@@ -9,7 +9,7 @@ body {
 button {
   border-radius: 30px;
   font-size: 25px;
-  height: 60px;
+  height: 2.5em;
   margin-top: 3rem;
   width: 6em;
 }
@@ -47,7 +47,7 @@ button a {
 }
 
 .trainline {
-  max-width: 85%;
+  max-width: 70%;
   margin: auto;
 }
 
@@ -74,4 +74,211 @@ button a {
   border-radius: 15px;
   height: 30px;
   font-size: 20px;
+}
+
+/* FOURTH PAGE */
+
+.report {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.issue-text {
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+form label {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  font-size: 20px;
+  height: 120px;
+  margin-bottom: 2rem;
+  width: 15rem;
+}
+
+.warning {
+  margin: 0;
+  width: 50%;
+}
+
+.submit {
+  border-radius: 15px;
+  height: 40px;
+  margin: 0 auto 3rem;
+  width: 10rem;
+}
+
+.thankspage {
+  text-align: center;
+  padding: 3rem;
+}
+
+.ty-message {
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.check {
+  width: 70%;
+}
+
+@media only screen and (min-width: 596px) {
+  .header {
+    font-size: 4.5rem;
+    margin-left: 0.5em;
+  }
+
+  .issue-text {
+    font-size: 3em;
+  }
+
+  form label {
+    font-size: 2rem;
+  }
+
+  textarea {
+    font-size: 24px;
+    width: 20rem;
+  }
+
+  .submit {
+    border-radius: 20px;
+    height: 60px;
+    margin-top: 2rem;
+    width: 15rem;
+  }
+
+  .thankspage {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ty-message {
+    font-size: 37px;
+  }
+
+  .check {
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  button {
+    border-radius: 40px;
+    font-size: 30px;
+    height: 3em;
+    width: 7em;
+  }
+
+  .logo {
+    width: 30em;
+  }
+
+  .header {
+    font-size: 6rem;
+    margin: 0 4rem;
+    padding: 5rem;
+  }
+
+  .infowindow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .locationname {
+    font-size: 33px;
+  }
+
+  .report-btn {
+    align-self: center;
+    font-size: 30px;
+    height: 50px;
+  }
+
+  .warning {
+    width: 30%;
+  }
+
+  textarea {
+    font-size: 30px;
+    height: 200px;
+    width: 30rem;
+  }
+
+  .submit {
+    font-size: 30px;
+  }
+
+  .ty-message {
+    font-size: 60px;
+    padding: 2rem 3rem;
+  }
+
+  .homebtn {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header {
+    font-size: 4rem;
+  }
+  .trainimg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .trainline {
+    max-width: 200px;
+  }
+
+  .warning {
+    width: 15%;
+  }
+
+  .issue-text {
+    font-size: 2.2em;
+  }
+
+  textarea {
+    font-size: 20px;
+    height: 150px;
+    width: 22rem;
+  }
+
+  form label {
+    font-size: 1.5rem;
+  }
+
+  .submit {
+    height: 35px;
+    font-size: 22px;
+    width: 8rem;
+  }
+
+  .ty-message {
+    font-size: 40px;
+    padding: 2rem 3rem;
+  }
+
+  .check {
+    width: 20%;
+  }
+
+  .homebtn {
+    font-size: 20px;
+  }
 }

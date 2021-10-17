@@ -1,4 +1,5 @@
-import React, { Component, Link } from "react";
+import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from "google-maps-react";
 import Form from "../containers/Form";
 
@@ -46,10 +47,14 @@ export class MapContainer extends Component {
           visible={this.state.showingInfoWindow}
           onClose={this.onClose}
         >
-          <div>
-            <h4>{this.state.selectedPlace.name}</h4>
-            <button className="report-btn">Report</button>
-          </div>
+          <Router>
+            <div className="infowindow">
+              <h4 className="locationname">{this.state.selectedPlace.name}</h4>
+              <button className="report-btn">
+                <Link to="/form">Report</Link>
+              </button>
+            </div>
+          </Router>
         </InfoWindow>
       </Map>
     );

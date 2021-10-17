@@ -6,7 +6,7 @@ function Home() {
   return (
     <main className="page-bg">
       <section className="landing">
-        <img src={Logo} alt="Logo" />
+        <img className="logo" src={Logo} alt="Logo" />
         <button>
           <Link to="/trains">Next</Link>
         </button>
